@@ -9,40 +9,41 @@
  * -------------------------------------------
  */
 html {
-
-    // --primary: #D9B778;
-
-    // --background-color: white;
-    // --ion-background-color-rgb: 33, 46, 62;
-    // --core-input-background: transparent;
+    --core-header-buttons-background: rgb(187, 187, 187);
+    --core-header-toolbar-background: #212E3E;
 
     ion-header ion-toolbar {
-        --core-header-toolbar-background: #212E3E;
+        color: rgb(187, 187, 187);
+    }
+    ion-header ion-toolbar {
+        --core-header-toolbar-border-width: 2px; /* Use 0 to disable it */
+        --core-header-toolbar-border-color: $brand-color;
     }
 
-//     ion-tab-bar.mainmenu-tabs {
-//         /* Background */
-//         --core-bottom-tabs-background: #212E3E;
-//         --core-bottom-tabs-background-selected: transparent;
+    ion-tab-bar.mainmenu-tabs {
+        /* Background */
+        --core-bottom-tabs-background: #212E3E;
+        --color-focused: $brand-color;
+        --core-bottom-tabs-background-selected: transparent;
 
-//         /* Tab icons */
-//         --core-bottom-tabs-color: rgba(255,255,255,.5);
+        /* Tab icons */
+        --core-bottom-tabs-color: rgba(255,255,255,.5);
 
-//         /* Selected tab icon */
-//         --core-bottom-tabs-color-selected: white;
+        /* Selected tab icon */
+        --core-bottom-tabs-color-selected: white;
 
-//         /* Badges */
-//         --core-bottom-tabs-badge-text-color: black;
-//         --core-bottom-tabs-badge-color: white;
-//     }
+        /* Badges */
+        --core-bottom-tabs-badge-text-color: black;
+        --core-bottom-tabs-badge-color: white;
+    }
 
-//     ion-card {
-//         --border-width: 1px;
-//         --border-style: solid;
-//         --border-color: #212e3e60;
-//         --box-shadow: none;
-//         --border-radius: var(--ion-card-radius);
-//     }
+    ion-card {
+        --border-width: 1px;
+        --border-style: solid;
+        --border-color: #212e3e60;
+        --box-shadow: none;
+        --border-radius: var(--ion-card-radius);
+    }
 
 }
 
@@ -51,5 +52,5 @@ html {
  * -------------------------------------------
  */
 html.dark {
-    // --primary: #D9B778;
+
 }
